@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+      <title>Lecteur vidéo</title>
+	  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	  <h1><center> Lecteur vidéo </center></h1>	  
+</head>
+<body>
+	<div id='media-player'>
+		<center>
+			<video id='Lecteur'  >
+				<source src="https://s3-eu-west-1.amazonaws.com/onrewind-test-bucket/big_buck_bunny.mp4" type='video/mp4'>
+			</video>
+		</center>
+			<div id='controles'>
+			<button id="playpause" onclick="Play()">►</button>
+			<progress id='progress' min='00' max='100' value='0'>0% played</progress>
+			</div>
+    </div>
+	<script type="text/javascript" src="video.js"></script>
+</body>
+</html>
+
